@@ -1,0 +1,26 @@
+body{
+	font-size: 100%;
+}
+
+
+h1{
+	font-size: 2.25em; /*36px; */
+}
+
+a{
+	font-size: .55555556em; /*20px; */
+}
+
+
+h2{
+	font-size: 1.8125em; /*29px; */
+}
+
+p{
+	font-size: 1em; /*16px; */
+}
+
+header{
+	background: silver;
+}
+
