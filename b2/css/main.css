@@ -7,6 +7,14 @@ body{
 #wrapper{
 	background: silver;
 }
+
+
+h1{
+	background: url(../images/crowd2.jpg) no-repeat center top;
+	width: 900px;
+	height: 502px;
+	text-align: center;
+}
 	
 nav{
 	border-bottom: 1px solid white;
@@ -21,3 +29,32 @@ nav{
 footer{
 	clear: both;
 }	
+
+li:nth-child(2n+2){
+	color:red;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES       */
+
+/* 
+@media screen and(min-width: 700px) and (max-width: 960px){
+
+}
+
+
+@media screen and(min-width: 700px) and (max-width: 960px){
+
+}
+
+
+
+@media screen and(min-width: 700px) and (max-width: 960px){
+
+}
+ */
+
