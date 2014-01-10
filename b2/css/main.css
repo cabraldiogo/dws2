@@ -1,0 +1,23 @@
+body{
+	width: 960px;
+	background: blue;
+	margin: 0 auto;
+}
+
+#wrapper{
+	background: silver;
+}
+	
+nav{
+	border-bottom: 1px solid white;
+}
+
+#tb1, #tb2, #tb3{
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+footer{
+	clear: both;
+}	
