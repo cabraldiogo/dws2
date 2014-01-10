@@ -1,29 +1,98 @@
 body{
 	width: 960px;
-	background: blue;
+	background: #d7c2bc;
 	margin: 0 auto;
+	font: bold 1em/3.125em Tahoma, Geneva, sans-serif;
 }
 
 #wrapper{
-	background: silver;
+	
 }
 
+header{
+	background: url(../images/crowd4.jpg) no-repeat center top;
+	height: 400px;
+}
+
+header + p{
+	padding: 0 10px;
+}
 
 h1{
-	background: url(../images/crowd2.jpg) no-repeat center top;
-	width: 900px;
-	height: 502px;
+	
+	width: 250px;
+	height: 50px;
+	float:left;
+	padding-bottom: 5px;
+	margin: 10px;
+	color: white;
+	
+	}
+h2{
+	text-indent: 10px;
+}	
+	
+h3{
+	margin: 0;
 	text-align: center;
+	background: #ff3d00;
+	height: 25px;
+	padding-top: 10px;
+	color: white;
+}
+
+section ~ div{
+	float: left;
+	margin: 0 30px;
 }
 	
 nav{
-	border-bottom: 1px solid white;
+	border-bottom: 4px solid #ff3d00;
+	width: 100%;
+    height: 3.125em;
+    font: bold 1em/3.125em Tahoma, Geneva, sans-serif;   /* short-hand code for font properties */
+    text-align: center;
+    margin: auto;
 }
 
-#tb1, #tb2, #tb3{
-	width: 200px;
-	height: 200px;
+section > div{
 	float: left;
+	margin: 0 30px;
+
+}
+
+a:link{
+	color: #ff3d00;
+}
+
+a:visited{
+	color: #ff3d00;
+}
+
+li a:hover{
+	color: white;
+}
+
+a{
+	text-decoration: none;
+}
+nav li{
+	display: inline-block;
+	color: white;
+	list-style:none;
+	font-size: 1.4em;
+	letter-spacing: 0.1em;
+	padding: 2px 20px;
+}
+
+img[src$=".jpg"]{
+	width: 248px;
+	height: 248px;
+	border: 4px solid #ff3d00;
+}
+
+div:nth-child(1n+4){
+	margin-top: 20px;
 }
 
 footer{
