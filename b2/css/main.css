@@ -12,6 +12,7 @@ body{
 }
 /*   Header starts here */
 header{
+	width: 100%;
 	background: url(../images/crowd4.jpg) no-repeat center top;
 	height: 400px;  /*    400px/960px */
 }
@@ -36,7 +37,7 @@ nav{
 	border-bottom: 3px solid #ed4a17;
 	width: 100%;
     height: 50px;
-    font: bold 1em/3.125em Tahoma, Geneva, sans-serif;   /* short-hand code for font properties */
+    font: bold 1em/3.125em Tahoma, Geneva, sans-serif;  
     text-align: center;
     margin: auto;
 }
@@ -52,7 +53,6 @@ nav li{
 	font-size: 1.4em;
 	letter-spacing: 0.1em;
 	padding: .20833333% 2.08333333%;   /* 2px/960px    -   20px/960px*/
-	text-shadow: 
 }
 
 li a:hover{
@@ -105,7 +105,7 @@ section > div{
 img[src$=".jpg"]{
 	width: 96.875%;   /* 248px/256px*/
 	height: 96.875%;   /* 248px/256px*/
-	border: 4px solid #ed4a17; /* 4px/256px*/
+	border: 4px solid #ed4a17; 
 }
 
 div:nth-child(1n+4){
@@ -130,21 +130,152 @@ footer p{
 
 
 /* MEDIA QUERIES       */
+ 
+@media screen and (min-width: 750px) and (max-width: 890px){
 
-/* 
-@media screen and(min-width: 700px) and (max-width: 960px){
+header{
+	background:url(../images/crowd_tablet.jpg);
+	height:255px;
+}
 
+header + p{
+	font-size: .8em;
+}
+
+h1{
+	font-size: 1.5em;
+	padding-bottom: .5%; /*5px/960px*/
+	margin: 1.3%; /*10px/960px*/
+}
+
+img[src$=".jpg"]{
+	width: 100%;   /* 248px/256px*/
+	height: 100%;   /* 248px/256px*/
+	border: 0;
+}
+
+nav li{
+	font-size: 1.2em;
+}
 }
 
 
-@media screen and(min-width: 700px) and (max-width: 960px){
+@media screen and (min-width: 641px) and (max-width: 749px){
 
+
+header{
+	background:url(../images/crowd_tablet2.jpg);
+	height:255px;
+}
+
+header + p{
+	font-size: .8em;
+}
+
+nav{
+	float: left;
+	border-bottom: 1px solid #ed4a17;
 }
 
 
 
-@media screen and(min-width: 700px) and (max-width: 960px){
+h1{
+	font-size: 1.5em;
+	margin: .1% auto 0;
+	width: 100%;
+	text-align: center;
+}
+
+img[src$=".jpg"]{
+	width: 100%;   /* 248px/256px*/
+	height: 100%;   /* 248px/256px*/
+	border: 0;
+}
+
+nav li{
+	font-size: 1.1em;
+	margin: 0 0 0 1%;
+}
+}
+
+
+
+@media screen and (max-width: 640px){
+
+header{
+	background:url(../images/crowd_mobile.jpg);
+	height:255px;
+}
+
+section > div{
+width: 90%;
 
 }
- */
+section div{
+	margin-bottom: 4%;
+}
+section{
+	margin-left: 5%;
+}
+
+img[src$=".jpg"]{
+	width: 100%;   /* 248px/256px*/
+	height: 100%;   /* 248px/256px*/
+	border: 0;
+}
+ul{
+	margin:0;
+}
+nav{
+	border: none;
+}
+
+nav li{
+	margin: 0%;
+	float: left;
+	width: 90%;
+	padding: 0.5% 0;
+	height: 25px;
+	font-size: 1.5em;
+	
+}
+
+nav li a{
+	font-size: 0.8em;
+	
+}
+nav ul li{
+	
+	margin: 2px;
+}
+div:nth-child(1n+2){
+	clear: both;
+}
+
+div:nth-child(1n+4){
+	margin-top: 0;
+	margin-bottom: 4%;
+}
+
+h1{
+	font-size: 1.5em;
+	padding-bottom: .5%; /*5px/960px*/
+	margin: 1.3% auto;
+	width: 100%;
+	text-align: center;
+}
+
+h3{
+	font-size: 1.4em;
+}
+
+h2{
+	text-align: center;
+}
+
+p{
+float: left;
+}
+}
+
 
