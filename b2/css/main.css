@@ -1,72 +1,70 @@
 body{
-	width: 960px;
-	background: #d7c2bc;
+	width: 100%;
+	max-width: 960px;
+	background:url(../images/pattern.png);
 	margin: 0 auto;
-	font: bold 1em/3.125em Tahoma, Geneva, sans-serif;
+	font-size: 1em;
 }
 
 #wrapper{
-	
+	width: 100%;
+	background: #b7ccc4;
 }
-
+/*   Header starts here */
 header{
 	background: url(../images/crowd4.jpg) no-repeat center top;
-	height: 400px;
+	height: 400px;  /*    400px/960px */
 }
 
 header + p{
-	padding: 0 10px;
+	padding: 0 1.04166666%; /*10px/960px*/
+	font: bold .8em/1.5em Tahoma, Geneva, sans-serif;
+	color: #424a4f;
 }
 
 h1{
-	
-	width: 250px;
-	height: 50px;
+	width: 26.04166666%; /*250px/960px*/
 	float:left;
-	padding-bottom: 5px;
-	margin: 10px;
-	color: white;
-	
+	padding-bottom: .520833333%; /*5px/960px*/
+	margin: 1.04166666%; /*10px/960px*/
+	color: #dae5e1;
 	}
-h2{
-	text-indent: 10px;
-}	
-	
-h3{
-	margin: 0;
-	text-align: center;
-	background: #ff3d00;
-	height: 25px;
-	padding-top: 10px;
-	color: white;
-}
 
-section ~ div{
-	float: left;
-	margin: 0 30px;
-}
-	
+/*   Nav starts here */	
+
 nav{
-	border-bottom: 4px solid #ff3d00;
+	border-bottom: 3px solid #ed4a17;
 	width: 100%;
-    height: 3.125em;
+    height: 50px;
     font: bold 1em/3.125em Tahoma, Geneva, sans-serif;   /* short-hand code for font properties */
     text-align: center;
     margin: auto;
 }
 
-section > div{
-	float: left;
-	margin: 0 30px;
+ul{
+	margin-top: 0;
+}
 
+nav li{
+	display: inline-block;
+	color: white;
+	list-style:none;
+	font-size: 1.4em;
+	letter-spacing: 0.1em;
+	padding: .20833333% 2.08333333%;   /* 2px/960px    -   20px/960px*/
+	text-shadow: 
+}
+
+li a:hover{
+	color: white;
 }
 
 a:link{
-	color: #ff3d00;
+	color: #ed4a17;
 }
 
 a:visited{
-	color: #ff3d00;
+	color: #ed4a17;
 }
 
 li a:hover{
@@ -76,34 +74,57 @@ li a:hover{
 a{
 	text-decoration: none;
 }
-nav li{
-	display: inline-block;
+
+/*   Nav ends here */
+	
+
+/*   Header ends here */	
+
+h2{
+	text-indent: 1.04166666%; /*10px/960px*/
+	color: #ed4a17;
+}	
+
+/*   Section starts here */	
+	
+h3{
+	margin: 0;
+	text-align: center;
+	background: #ed4a17;
+	height: 25px;
+	padding-top:  3.90625000%; /*10px/256px*/
 	color: white;
-	list-style:none;
-	font-size: 1.4em;
-	letter-spacing: 0.1em;
-	padding: 2px 20px;
+}
+
+section > div{
+	float: left;
+	margin: 0 3.125%;   /*  30px/960px*/
+	width: 26.66666666%; /* 256px/ 960px*/ 
 }
 
 img[src$=".jpg"]{
-	width: 248px;
-	height: 248px;
-	border: 4px solid #ff3d00;
+	width: 96.875%;   /* 248px/256px*/
+	height: 96.875%;   /* 248px/256px*/
+	border: 4px solid #ed4a17; /* 4px/256px*/
 }
 
 div:nth-child(1n+4){
-	margin-top: 20px;
+	margin-top: 2.08333333%; /* 20px/960px*/
+	margin-bottom: 2.08333333%; /* 20px/960px*/
 }
+
+/*   Footer starts here */
 
 footer{
+	background: #ed4a17;
+	padding-top: 1.04166666%; /*10px/960px*/
 	clear: both;
-}	
-
-li:nth-child(2n+2){
-	color:red;
 }
-
-
+footer p{
+	margin:0;
+	margin-left: .520833333%; /*5px/960px*/
+}
+/*   Footer ends here */
 
 
 
