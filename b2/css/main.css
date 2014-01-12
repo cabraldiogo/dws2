@@ -133,8 +133,7 @@ footer p{
 
 header{
 	background:url(../images/crowd_tablet.jpg);
-	/* height:255px; */
-	background-size: 100%;
+	height:255px;
 }
 
 header + p{
