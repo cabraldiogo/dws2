@@ -17,6 +17,45 @@
 /* #Site Styles
 ================================================== */
 
+/*=========== Sidebar style =======================*/
+#video-tb > p{
+	float: left;
+	width: 160px;
+	color: red;
+}
+
+#video-tb img{
+	float: left;
+	margin-right: 5px;
+}
+
+#video-tb{
+	border: 1px solid blue;
+	width: 300px;
+	height: 75px;
+}
+
+.one-third column > div{
+	float: letf;
+	clear: both;
+}
+
+/*===================Main content style=============*/
+section > div{
+	width: 100px;
+	height: 120px;
+	float: left;
+	margin: 0 10px;
+}
+
+img[alt~="logo"]{
+	border: 2px solid red;
+}
+
+
+
+
+
 /* #Page Styles
 ================================================== */
 
