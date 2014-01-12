@@ -17,54 +17,92 @@
 /* #Site Styles
 ================================================== */
 
-/*=========== Sidebar style =======================*/
-#video-tb > p{
-	float: left;
-	width: 160px;
-	color: red;
+h1{
+	color: #de1c67;
 }
 
-#video-tb img{
+/*=========== Sidebar style =======================*/
+
+aside{
+	
+}
+aside div > p{
+	float: left;
+	max-width: 170px;
+	height: 40px;
+	color: #de1c67;
+}
+
+aside img{	
 	float: left;
 	margin-right: 5px;
 }
 
-#video-tb{
-	border: 1px solid blue;
+aside div{
+	
 	width: 300px;
 	height: 75px;
+	margin: 0 0 10px 0;
+	overflow: hidden;
 }
 
-.one-third column > div{
-	float: letf;
-	clear: both;
+img[alt~="youtube"]{
+	width: 120px;
+	height: 70px;
+	margin-left: 5px;
+}
+
+a h5{
+	color: #4c4b4b;
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+
+a{
+	text-decoration: none;
 }
 
 /*===================Main content style=============*/
+
+section{
+
+}
 section > div{
-	width: 120px;
-	height: 120px;
+	width: 130px;
+	height: 130px;
 	float: left;
-	margin: 0 10px 20px;;
+	margin: 0 12px 20px;
+	
 }
 
 img[alt~="logo"]{
-	border: 2px solid red;
+	border: 2px solid silver;
+	border-radius: 10px;
 	margin-bottom: 20px;
 	display: bolck;
+	background-color: #f1eeef;
 }
 
 section div > h5{
 	text-align: center;
+	width: 132px;
 }
 
 section div:nth-child(1n+7){
 	margin-top: 30px;
 }
 
+img:hover{
+	background-color: #cbcac9;
+}
 
 
 
+
+h5{
+	font: 1em/1.4em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 
 /* #Page Styles
