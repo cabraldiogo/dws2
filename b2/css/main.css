@@ -31,7 +31,7 @@ h1{
 	color: #dae5e1;
 	}
 
-/*   Nav starts here */	
+/*------------Nav starts here---------------- */	
 
 nav{
 	border-bottom: 3px solid #ed4a17;
@@ -75,17 +75,17 @@ a{
 	text-decoration: none;
 }
 
-/*   Nav ends here */
+/*-------------Nav ends here-------------------- */
 	
 
-/*   Header ends here */	
+/*-------------Header ends here----------------- */	
 
 h2{
 	text-indent: 1.04166666%; /*10px/960px*/
 	color: #ed4a17;
 }	
 
-/*   Section starts here */	
+/*---------------Section starts here------------- */	
 	
 h3{
 	margin: 0;
@@ -124,12 +124,10 @@ footer p{
 	margin:0;
 	margin-left: .520833333%; /*5px/960px*/
 }
-/*   Footer ends here */
+/*---------------Footer ends here---------------- */
 
 
-
-
-/* MEDIA QUERIES       */
+/*---------------MEDIA QUERIES--------------------*/
  
 @media screen and (min-width: 750px) and (max-width: 890px){
 
