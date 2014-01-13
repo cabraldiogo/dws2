@@ -72,7 +72,7 @@ aside div{
 	overflow: hidden;
 }
 
-img[alt~="youtube"]{
+img[alt~="thumbnail"]{
 	width: 40%;   /* 120/300   */
 	height: 70px;
 	margin-left: 1.67777777%;   /* 5/300  */
