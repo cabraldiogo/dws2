@@ -17,18 +17,20 @@
 /* #Site Styles
 ================================================== */
 
-/*=========== Validation OK =======================*/
 
 body{
-	background-color: #e6e6f0;
+	background-image: url(../images/pattern_062.gif);
 }
 
+.container{
+	background-color: #f0f5f5;
+}
 
 /*=========== Header style =======================*/
 
 h1{
 	color: #de1c67;
-	width: 300px;
+	width: 31.25%; /*  300/960*/
 }
 
 h1, h4{
@@ -41,9 +43,9 @@ h4{
 
 header a{
 	float:right;
-	width: 50px;
+	width: 5.20833333%;/* 50/960 */
 	height: 50px;
-	margin: 20px 10px 0;
+	margin: 20px 1.06382978% 0;
 	background-image: url(../images/logo-gmail2.png);
 	background-repeat: no-repeat;
 }
@@ -52,28 +54,28 @@ header a{
 
 aside div > p{
 	float: left;
-	max-width: 170px;
+	max-width: 56%; /*  170/300*/
 	height: 40px;
 	color: #de1c67;
 }
 
 aside img{	
 	float: left;
-	margin-right: 5px;
+	margin-right: 1.66666666%;  /* 5/300*/
 }
 
 aside div{
 	
-	width: 300px;
+	width: 100%; /* 300/300   */
 	height: 75px;
-	margin: 0 0 10px 0;
+	margin: 0 0 3.33333333% 0;  /* 10/300  */
 	overflow: hidden;
 }
 
 img[alt~="youtube"]{
-	width: 120px;
+	width: 40%;   /* 120/300   */
 	height: 70px;
-	margin-left: 5px;
+	margin-left: 1.67777777%;   /* 5/300  */
 }
 
 a h5{
@@ -88,30 +90,27 @@ a{
 
 /*===================Main content style=============*/
 
-section{
-
-}
 section > div{
-	width: 130px;
+	width: 20.96774193%;    /*  130/620  */
 	height: 130px;
 	float: left;
-	margin: 0 12px 20px;
+	margin: 0 1.93548387% 3.22580645%;    /* right/left: 12/620 and bottom 20/620 */
 }
 
 img[alt~="logo"]{
 	border: 2px solid silver;
 	border-radius: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 14.92537313%;  /*   20/134*/  
 	background-color: #f1eeef;
 }
 
 section div > h5{
 	text-align: center;
-	width: 132px;
+	width: 101.53846666%;    /* 132/130  */
 }
 
 section div:nth-child(1n+7){
-	margin-top: 30px;
+	margin-top: 4.83870967%; /*  30/620 */
 }
 
 img:hover{
