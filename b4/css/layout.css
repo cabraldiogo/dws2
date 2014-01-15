@@ -1,0 +1,74 @@
+body{
+
+	font-family: 'Cabin', sans-serif;
+	background-image: url(../images/knitting.png)
+}
+
+.navbar-collapse{
+	background-color: #55acbf;
+}
+
+h1, h2{
+	color: #55acbf;
+}
+
+.jumbotron h1{
+	color: #55acbf;
+}
+
+.jumbotron{
+	background-color: #fbfdfd;
+}
+
+.navbar-collapse a{	
+	color: #f2f6f7;
+}	
+
+.navbar header a{
+	color:red;
+}
+
+a{
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: #f8f3f5;
+}
+
+.navbar-brand > li > a{
+	color: red;
+}
+
+.nav navbar-nav > li > a{
+	color: red;
+}
+
+.navbar-header > a {
+	color: #f8f3f5;
+}
+
+.btn-primary{
+	background-color: #55acbf;
+}
+
+.btn-primary:hover, .btn-primary:hover{
+	background-color: #4791a1;
+}
+
+.btn-lg{
+	border-radius: 5px;
+	border: none;
+}
+
+/* =============Media Queries =========================*/
+@media only screen and (max-width: 767px) {
+.navbar-collapse{
+background-color: #55acbf;
+}
+
+.navbar-header{
+	background-color: #55acbf;
+}
+}
+
