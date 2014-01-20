@@ -1,10 +1,29 @@
 body{
-	background: url(../img/arizona.jpg) no-repeat fixed 0 0;
+	background-color: black;
 
 }
 
-img[alt~="dot"]{
-	margin: 10px 10px 10px 580px;
-	position: relative;
-	z-index: 100;
+
+h2, h3{
+	color: white;
+
+}
+
+h2{
+	margin-bottom: 30px;
+}
+
+#featured{
+	margin-top: 40px;
+}
+
+img[alt~="tb"]{
+	width:100%;  /*  317/1010  31.38613861%*/
+	height: 67.82334385%;  /* 67.82334385%*/
+	
+}
+
+.about{
+	margin-bottom: 10px;
+
 }
