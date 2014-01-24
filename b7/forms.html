@@ -6,7 +6,7 @@
 	<head> 
 		<meta charset = "utf-8" />
 		<meta name="viewport" content="initial-scale=1">
-		<link href = "css/styles.css" rel= "stylesheet" />
+		<link href = "css/main.css" rel= "stylesheet" />
 		<script src="js/modernizr.js"></script>
 		
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -14,101 +14,109 @@
 		js"></script>
 		<script src="js/js-webshim/minified/polyfiller.js"></script>
 		<script>
-//load all defined
-$.webshims.polyfill();
-</script>
+		//load all defined
+		$.webshims.polyfill();
+		</script>
+		
 		<title>Forms</title>
 	</head>
 		
 
 <!-- body starts here --> 
 	<body>		
-				
-<!-- section form starts here --> 				
-				<section>
-<!-- div form starts here -->				
-					<div id = "form">
-						<form>			
-	<!-- div personal data-->					
-							<div id="personal_data">
-								<div id ="user_info">	
-									<label for = "name">Name:</label>
-									 <input id ="name" type = "text" name = "name" maxlength = "30" placeholder ="30 characters maximum" required />
-					
-									<label for = "address">Address:</label><input id ="address" type = "text" name = "address" maxlength = "30" placeholder ="30 characters maximum" required  />
-								
-									<label for= "birthday">Birthday:</label><input id="birthday" type="text" name="birthday" />
-								
-									<label for= "tel">Telephone:</label> <input type="tel" id="tel" maxlength = "30" placeholder ="30 characters maximum" required  />
-								</div>
-								
-	<!-- div radio button starts here -->
-								<div id ="dropbox">	
-									<p>What is your favorite color?</p>
-									<select name = "marketing">
-										<option> Choose One</option>
-										<option value = "Black">Black</option>
-										<option value = "Blue">Blue</option>
-										<option value = "Brown">Brown</option>
-										<option value = "Green">Green</option>
-										<option value = "Gray">Gray</option>
-										<option value = "Pink">Pink</option>
-										<option value = "Red">Red</option>
-										<option value = "Yellow">Yellow</option>
-									</select>
-								</div>
-							
-	<!-- div text comment starts here -->
-								<div id ="text_comment">		
-									<p>Why do you like this color?</p>
-									<textarea id = "textfield" name ="comment_field" placeholder = "Enter your comment here"></textarea>
-								</div>	
-							</div>		<!-- div personal ends-->	
-											
-								<!-- div employment data starts here -->
-
-							<div id="employment_data">
-								<label for = "address">Place of Employment: </label><input class ="float_left form_focus form_hover" id ="Place_of_Employment" type = "text" name = "address" maxlength = "30" placeholder ="30 characters maximum" required  />
-									
-	<!-- div radio starts here -->							
-								<label for = "start">Start Date: </label><input id="start" type="date" name="start" />
-								
-								<div id ="radio">		
-									<p>How long have you worked at your current job?</p>
-									<input type="radio" id="less_than_one_year" value="less_than_one_year"> 
-									<label for= "less_than_one_year">Less than 1 year</label>
-									<input type="radio" id="about_one_year" value="about_one_year"> 
-									<label for= "about_one_year">About 1 year</label>
-									<input type="radio" id="within_two_years" value="within_two_years"> 
-									<label for= "within_two_years">Within 2 years</label>
-									<input type="radio" id="more_than_two" value="more_than_two_years"> 
-									<label for= "more_than_two">More than 2 years</label>
-									<input type="radio" id="within_two_five" value="within_two_five"> 
-									<label for= "within_two_five">Within 2-5 years</label>
-									<input type="radio" id="more_than_five_years" value="more_than_five_years"> 
-									<label for="more_than_five_years">More than 5 years</label>
-								</div>	
-								
-								<!-- range starts here -->
-								<p>Rate this form</p>
-								<input id="howYouRateIt" name="howYouRateIt" type="range" min="1"
-								max="10" value="5" onchange="showValue(this.value)"><span id="range">10</span>	
-							
-	<!-- submit button starts here -->
-
-								<input id="submit" type = "submit" value ="Send Form" />		
-							</div>
-				
-						</form> 
-<!-- div form closes below --> 						
-					</div>
-<!-- section form closes below --> 	
-				</section>				
 			
-<!-- footer starts here --> 
-			<footer>	
-				<p></p>
-			</footer>	
+		<section> <!-- section form starts here --> 	
+		
+			
+				<form>
+					<h1>Color Choice Survey</h1>			
+				
+					<fieldset id="personal_data"> <!--  personal data starts -->
+						<h2>Personal Information</h2>
+						<div id ="user_info">	
+							<label for="name">Name:</label>
+							 <input id="name" type="text" name="name" maxlength="30" placeholder="30 characters maximum" required />
+			
+							<label for="address">Address:</label><input id="address" type="text" name="address" maxlength="30" placeholder="30 characters maximum" required  />
+						
+							<label for="birthday">Birthday:</label><input id="birthday" type="text" name="birthday" placeholder="mm/dd/yyyy" />
+						
+							<label for="tel">Telephone:</label> <input type="tel" id="tel" maxlength="30" placeholder ="xxx-xxx-xxxx" required  />
+						</div>	<!--  div user_info ends here -->
+						
+					</fieldset> <!--  personal data ends -->
+						
+
+					<fieldset>
+						<h2>Color Choice</h2>
+						<div id ="dropbox">
+							<p>What is your favorite color?</p>
+							<select name = "marketing">
+								<option> Choose One</option>
+								<option value="Black">Black</option>
+								<option value="Blue">Blue</option>
+								<option value="Brown">Brown</option>
+								<option value="Green">Green</option>
+								<option value="Gray">Gray</option>
+								<option value="Pink">Pink</option>
+								<option value="Red">Red</option>
+								<option value="Yellow">Yellow</option>
+							</select>
+						</div> <!--  div dropbox ends here -->
+					
+
+						<div id ="text_comment">	<!-- div text comment starts here -->	
+							<p>Why do you like this color?</p>
+							<textarea id = "textfield" name ="comment_field" placeholder = "Enter your comment here"></textarea>
+						</div>	
+						
+					</fieldset> <!-- color choice ends here-->	
+									
+						
+					<fieldset><!-- div employment data starts here -->
+						<h2>Additional Information</h2>
+						
+							<label for = "address">Place of Employment: </label><input class ="float_left form_focus form_hover" id ="Place_of_Employment" type="text" name="address" maxlength = "30" placeholder="30 characters maximum" required  />
+							
+							<!-- div radio starts here -->							
+							<label for="start">Start Date: </label><input id="start" type="date" name="start" placeholder="click on the calendar icon"/>
+						
+							<div id ="radio">		
+								<p>How long have you worked at your current job?</p>
+								<input type="radio" name="timeOfWork" id="less_than_one_year" value="less_than_one_year"> 
+								<label for="less_than_one_year">Less than 1 year</label>
+								<input type="radio" name="timeOfWork" id="about_one_year" value="about_one_year"> 
+								<label for="about_one_year">About 1 year</label>
+								<input type="radio" name="timeOfWork" id="within_two_years" value="within_two_years"> 
+								<label for="within_two_years">Within 2 years</label>
+								<input type="radio" name="timeOfWork"  id="more_than_two" value="more_than_two_years"> 
+								<label for="more_than_two">More than 2 years</label>
+								<input type="radio" name="timeOfWork"  id="within_two_five" value="within_two_five"> 
+								<label for="within_two_five">Within 2-5 years</label>
+								<input type="radio" name="timeOfWork" id="more_than_five_years" value="more_than_five_years"> 
+								<label for="more_than_five_years">More than 5 years</label>
+							</div>	
+					</fieldset><!--  employment data ends here -->
+						
+					<!-- range starts here -->
+					<div id="rangeBar">
+						<p>Rate this survey (1 to 10)</p>
+						<input id="howYouRateIt" name="howYouRateIt" type="range" min="1"
+						max="10" value="5" onchange="showValue(this.value)"><span id="range">5</span>	
+					</div>
+					
+					<!-- submit button starts here -->	
+					<div id="btn">
+					<input id="submit" type="submit" value="Send Form" />
+					</div>	
+						
+				</form> 
+				
+			
+
+		</section><!-- section form closes below --> 				
+			
+
 			
 			<script>
 				function showValue(newValue)

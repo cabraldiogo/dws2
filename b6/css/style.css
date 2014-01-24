@@ -32,9 +32,13 @@ div img{
 
 h1{
 	float: left;
-	width: 15%;
-	margin: 0 0 0 2%;
+	width: 30%;
+	margin: 0 0 0 0.5%;
 	line-height: 50px;
+}
+
+h2, h3{
+	color: rgb(80,108,129);
 }
 
 h2{
@@ -52,6 +56,7 @@ h4{
 #test{
 	width: 100%;
 }
+
 #side{
 	width: 25%;
 	float: left;
@@ -91,6 +96,7 @@ h4{
 #map a::before{
 	content: attr(data-tp);
 }
+
 nav{
 	width: 100%;
     height: 3.125em;
@@ -124,7 +130,7 @@ nav ul li a:hover{
 
 }
 #mobile h3{
-	background-color: red;
+	
 	display: none;
 }
 
@@ -168,21 +174,15 @@ footer{
 	width: 100%;
 	clear:both;
 	background: rgba(80,108,129,0.9);
+	height: 40px;
+	line-height: 40px;
 }
 
 
-@media screen and (max-width: 480px){
-
-#mobile h3{
-	background-color: red;
-}
-
-#map{
-	display:none;
-}
-}
 
 
+
+/* ===============  Media Queries ===================== */
 @media screen and (min-width: 805px) and (max-width: 932px){
 
 
@@ -210,5 +210,31 @@ h1{
 }
 }
 
+@media screen and (max-width: 480px){
 
+#mobile{
+	display: block;
+}
+
+#side{
+	display: none;
+}
+
+h3{
+
+}
+#mobile h3{
+	background-color: rgb(80,108,129);
+	color: #333;
+	display: block;
+	margin: 1% 0;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+
+#map{
+	display:none;
+}
+}
 

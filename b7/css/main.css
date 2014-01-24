@@ -1,0 +1,143 @@
+
+body{
+	font-family: tahoma, verdana, "sans-serif";
+	background: url(../img/multicolor.jpg);
+	font-size: 1em;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+h1, h2{
+	color: #006a55;
+}
+
+
+h1{
+	margin: .5em auto;
+	width: 90%;
+	text-align: center;
+	padding-top: 1em;
+}
+
+
+h2{
+	font-size: 1em;
+}
+
+
+form{
+	width: 480px;
+	background-color: #999;
+	margin: 0 auto;
+	opacity: .9;
+}
+
+
+label{
+	display: block;
+	font-size: .8em;
+}
+
+
+input{
+	margin-bottom: 20px;
+	width: 50%;
+}
+
+
+#radio label{
+	display: inline;
+	float: left;
+}
+
+
+#radio input{
+	width: 5%;
+}
+
+
+#rangeBar p{
+	text-indent: 10%;
+}
+
+#rangeBar input{
+	width: 60%;
+	margin-left: 10%;
+}
+
+
+#range{
+	width: 60%;
+	display:block;
+	margin: 0 0 5% 7%;
+	text-align: center;
+	border: none;
+}
+
+
+#btn{
+	width: 60%;
+	margin: 1% 0 1% 10%;
+	padding-bottom: 20px;
+}
+
+
+textarea{
+	width: 50%;
+}
+
+
+fieldset{
+	border: none;
+	margin-left: 2em;
+}
+
+
+#submit{
+	display: block;
+	width: 40%;
+	margin: 5% 0 10% 10%;
+	padding: 5% 0 10% 10%;
+}
+
+
+#radio input{
+	float: left;
+	clear: both;
+}
+
+
+#submit{
+	margin: 0 0 20px 0;
+	cursor: pointer;
+	height: 30px;
+}
+
+
+/* ================== Media Queries starts here ===================== */
+@media screen and (max-width: 520px){
+
+form{
+	width: 90%;
+}
+
+#radio p{
+	font-size: .9em;
+}
+
+
+input{
+	
+	width: 70%;
+}
+
+
+textarea{
+	width: 70%;
+}
+
+}
+
+
+
