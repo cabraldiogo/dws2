@@ -5,7 +5,7 @@ body{
 	font-size: 1em;
 	width: 100%;
 	max-width: 960px;
-	margin: 0 auto;
+	margin: 2% auto 2% auto;
 }
 
 h1, h2{
@@ -43,6 +43,11 @@ label{
 input{
 	margin-bottom: 20px;
 	width: 50%;
+	height: 20px;
+}
+
+#personal_data input, #Place_of_Employment, #start, textarea{
+	border-radius: 3px;
 }
 
 
