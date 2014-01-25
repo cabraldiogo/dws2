@@ -54,17 +54,23 @@ input{
 #radio label{
 	display: inline;
 	float: left;
+	padding-top: 5px;
+	-webkit-margin-top: 3px;
 }
 
 
 #radio input{
 	width: 5%;
+	float: left;
+	clear: both;
+	
 }
 
 
 #rangeBar p{
 	text-indent: 10%;
 }
+
 
 #rangeBar input{
 	width: 60%;
@@ -104,12 +110,6 @@ fieldset{
 	width: 40%;
 	margin: 5% 0 10% 10%;
 	padding: 5% 0 10% 10%;
-}
-
-
-#radio input{
-	float: left;
-	clear: both;
 }
 
 
