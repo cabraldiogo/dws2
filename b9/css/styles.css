@@ -15,14 +15,113 @@ Silver : #d5d5d5;
 
 *{ margin:0px; padding: 0px; }
  
+
+
+/* ==== Main style ====  */
+ 
+ html{
+     background-image: url(../img/moulin.png);
+
+}
+
+
+ body{
+     
+     max-width: 960px;
+     width: 100%;
+     background-color: #3c3c3c;
+     margin: 0 auto;
+     font-family: 'Monda', sans-serif;
+
+ }
+
+
+
+
+.left{
+     float: left;
+
+}
+
+.right{
+     float: right;
+}
+
+.clear{
+     clear: both;
+}
+
+.col-1{
+     width: 40px;
+
+}
+
+.col-2{
+     width: 100px;
+
+}
+
+.col-3{
+     width: 220px;
+
+}
+
+.col-4{
+     width: 280px;
+
+}
+
+.col-5{
+     width: 280px;
+
+}
+
+.col-6{
+     width: 340px;
+
+}
+
+.col-7{
+     width: 400px;
+
+}
+
+.col-8{
+     width: 460px;
+     padding: 10px;
+     margin: 10px;
+
+}
+
+
+
+
+
+/* ==== Headings and paragraphs style ====  */
+
+h1{
+    text-indent: 1%;
+    text-shadow: 1px 1px #aeaeae; 
+}
+h1,h2, h3, h4{
+     color: #913232;
+}
+
+p{
+     color: #d5d5d5;
+}
+
+
+ /* ==== Navigation style ====  */
 nav {
      font-family: arial, sans-serif;
      position: relative;
-     width: 390px;
-     height:56px;
+     width: 100%;
+     height:55px;
      font-size:14px;
-     color:#999;
+     color: #3c3c3c;
      margin: 0px auto;
+     background-color: #aeaeae;
 }
  
 nav ul {
@@ -36,13 +135,19 @@ nav ul li {
 
 nav ul li a {
      text-align: center;
+     width: 151px;
      border-right:1px solid #e9e9e9;
      padding:20px;
      display:block;
      text-decoration:none;
-     color:#999;
+     color: #3c3c3c;
+     font-weight: bold;
 }
 
+nav a:hover{
+     background-color: #913232;
+     color: #aeaeae;
+}
 nav ul li ul {
      display: none;
 }
@@ -50,23 +155,96 @@ nav ul li ul {
 nav ul li:hover ul {
      display: block;
      position: absolute;
+
 }
 
 nav ul li:hover ul li a {
      display:block;
-     background:#12aeef;
+     background: #913232;
      color:#ffffff;
-     width: 110px;
+     width: 151px;
      text-align: center;
      border-bottom: 1px solid #f2f2f2;
      border-right: none;
 }
 
 nav ul li:hover ul li a:hover {
-     background:#6dc7ec;
+     background: #3c3c3c;
      color:#fff;
 }
 
+ /* ==== Featured style ====  */
+
+#featured{
+     background-image: url(../img/bmw2.png);
+     background-color: white;
+     width: 100%;
+     height: 400px;
+}
+
+#featured h2{
+     text-indent: 1%;
+     padding-top: 10px;
+
+}
+
+#featured p{
+     text-indent: 10px;
+     color: #3c3c3c;
+}
+#search{
+     width: 300px;
+     height: 310px;
+     background-color: rgba(85,85,85,.2);
+     margin-right: 30px;
+     box-shadow: 1px 1px 5px #000;
+     border-radius: 5px;
+}
+
+#search h3{
+     opacity: 1;
+}
+/* ==== Div cars style ====  */
+
+#cars{
+     width: 640px;
+     float: left;
+}
+
+#cars div.col-4{
+     float: left;
+     margin: 10px;
+     padding: 5px;
+}
+
+footer{
+     width: 100%;
+     height: 50px;
+     line-height: 50px;
+     clear: both;
 
 
+}
 
+table{
+     text-align: center;
+     width: 100%;
+}
+#cars + div.col-4{
+     float: right;
+}
+
+.app a{
+     display: block;
+    
+     width: 80px;
+     margin: 10px;
+     padding: 10px;
+     text-decoration: none;
+     background-color: #913232;
+     line-height: 40px;
+     color: #d5d5d5;
+     border-radius: 5px;
+     text-align: center;
+
+}
