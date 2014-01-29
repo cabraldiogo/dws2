@@ -113,6 +113,7 @@ p{
 
 
  /* ==== Navigation style ====  */
+
 nav {
      font-family: arial, sans-serif;
      position: relative;
@@ -173,6 +174,9 @@ nav ul li:hover ul li a:hover {
      color:#fff;
 }
 
+
+
+
  /* ==== Featured style ====  */
 
 #featured{
@@ -184,7 +188,8 @@ nav ul li:hover ul li a:hover {
 
 #featured h2{
      text-indent: 1%;
-     padding-top: 10px;
+     padding-top: 6px;
+
 
 }
 
@@ -192,29 +197,95 @@ nav ul li:hover ul li a:hover {
      text-indent: 10px;
      color: #3c3c3c;
 }
+
+/* ==== Search box style ====  */
+
+
 #search{
      width: 300px;
-     height: 310px;
+     height: 290px;
      background-color: rgba(85,85,85,.2);
-     margin-right: 30px;
+     margin: 10px 30px 0 0;
      box-shadow: 1px 1px 5px #000;
      border-radius: 5px;
 }
 
 #search h3{
-     opacity: 1;
+     text-align: center;
 }
+
+
 /* ==== Div cars style ====  */
+
+#cars h2{
+   text-indent: 1%;  
+   padding-top: 10px;
+   text-shadow: 1px 1px black;
+}
 
 #cars{
      width: 640px;
      float: left;
-}
+    }
 
 #cars div.col-4{
      float: left;
-     margin: 10px;
-     padding: 5px;
+     margin: 15px 10px 0 20px;
+     background-color: #aeaeae;
+     box-shadow: 1px 1px 3px white;
+}
+
+
+
+table{
+     text-align: center;
+     width: 95%;
+     margin: 0 auto 5px auto;
+     border-collapse: collapse;
+     font-size: .8em;
+
+}
+
+td{
+     border: 1px solid #913232;
+
+}
+
+/* ==== Div class App(aside) style ====  */
+
+.app{
+     float: right;
+     border: 1px solid red;
+    
+}
+
+.app h3{
+     text-indent: 3%;
+     color: #aeaeae;
+}
+
+div.app{
+     width: 290px;
+     margin: 15px 20px 30px 0px;
+
+}
+
+.app p{
+     line-height: 1.3em;
+     padding: 3%;
+}
+.app a{
+     display: block;
+     width: 100px;
+     margin: 10px auto;
+     padding: 6px 10px;
+     text-decoration: none;
+     background-color: #913232;
+     line-height: 40px;
+     color: #d5d5d5;
+     border-radius: 5px;
+     text-align: center;
+
 }
 
 footer{
@@ -223,28 +294,5 @@ footer{
      line-height: 50px;
      clear: both;
 
-
-}
-
-table{
-     text-align: center;
-     width: 100%;
-}
-#cars + div.col-4{
-     float: right;
-}
-
-.app a{
-     display: block;
-    
-     width: 80px;
-     margin: 10px;
-     padding: 10px;
-     text-decoration: none;
-     background-color: #913232;
-     line-height: 40px;
-     color: #d5d5d5;
-     border-radius: 5px;
-     text-align: center;
 
 }
