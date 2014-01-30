@@ -30,6 +30,9 @@ Silver : #d5d5d5;
      font-family: 'Monda', sans-serif;
  }
 
+#mobile-menu{
+     display: none;
+}
 /* ==== General classes ==== */
 .left{
      float: left;
@@ -79,9 +82,11 @@ nav {
  
 nav ul {
      list-style-type: none;
+     width: 100%;
 }
 
 nav ul li {
+    
      float: left;
      position: relative;
 }
@@ -90,7 +95,7 @@ nav ul li a {
      text-align: center;
      width: 151px;  /*  151/192 = 78.64583333%*/
      border-right:1px solid #e9e9e9;
-     padding:20px;
+     padding: 10.41666666%;   /*  20/192 = 10.41666666% */
      display:block;
      text-decoration:none;
      color: #3c3c3c;
@@ -133,6 +138,8 @@ nav ul li:hover ul li a:hover {
 
 #featured{
      background-image: url(../img/bmw2.png);
+     background-repeat: no-repeat;
+     background-size: contain;
      background-color: white;
      width: 100%;
      height: 400px;
@@ -141,12 +148,14 @@ nav ul li:hover ul li a:hover {
 #featured h2{
      text-indent: 1%;
      padding-top: 6px;
+     font-size: 1.4em;
 }
 
 
 #featured p{
      text-indent: 10px;
      color: #3c3c3c;
+     font-size: 1em;
 }
 
 /* ==== Search box style ====  */
@@ -213,6 +222,20 @@ select{
      margin: 15px 1.5625% 0 3.125%;   /*  10/640 = 1.5625%   and 20/640 = 3.125% */
      background-color: #aeaeae;
      box-shadow: 1px 1px 3px white;
+}
+
+#cars img{
+     width: 100%;
+     -moz-transition: all 1s ease;
+     -webkit-transition: all 1s ease;
+    transition-: all 1s ease;
+}
+
+#cars img:hover{
+     -moz-transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+     
 }
 
 /* ==== Table styles ==== */
@@ -310,7 +333,10 @@ div.video + div.side{
      margin-top: 5px;
 }
 
+.btn a:hover{
+     box-shadow: 10px 10px 10px black;
 
+}
 footer{
      width: 100%;
      height: 50px;
@@ -320,3 +346,191 @@ footer{
      text-indent: 1%;
 
 }
+
+
+/*   ==== Media Queries ==== */
+
+@media screen and (min-width: 400px) and (max-width: 990px){
+
+body{
+     width: 98%
+}
+
+nav {
+     height: 50px;
+     background-color: #aeaeae;
+}
+
+nav ul li{
+     width: 19.99%;
+}
+
+
+
+nav ul li a {
+     width: 78.4583333%; /*  151/192 = 78.64583333% */
+     padding: 8%; 
+
+}
+
+nav a:hover{
+     background-color: rgba(0, 0, 0, 0);
+     color: #913232;
+     font-size: 1.2em;
+}
+
+
+
+nav ul li:hover ul li a {
+   
+     width: 78.4583333%;
+   
+}
+
+nav ul li:hover ul li a {
+   
+     width: 78.4583333%;
+   
+}
+
+nav ul li:hover ul li ul li a {
+   
+     width: 78.4583333%;
+   
+}
+
+
+#featured p{
+     display: none;
+}
+
+.side > p{
+     font-size: .8em;
+}
+
+iframe{
+     width: 96%;
+}
+li.last > a{
+     border: none;
+}
+
+table{
+     width: 90%;
+
+}
+
+td{
+     font-size: .8em;     
+}
+
+}
+
+
+
+
+@media screen and (min-width: 640px) and (max-width: 767px){
+
+#search, .side{
+     display: none;
+}
+
+#cars{
+     width: 98%;
+     margin-left: 2%;
+}    
+
+#featured{
+     background-image: url(../img/mobile-bmw.png);
+     height: 325px;
+}
+
+nav{
+     display: none;
+}
+
+#mobile-menu{
+     display: block;
+     background-color: #aeaeae;
+     width: 100%;
+     text-align: center;
+}
+
+h1{
+     text-align: center;
+}
+
+} 
+
+
+@media screen and (min-width: 540px) and (max-width: 639px){
+
+     #featured{
+     background-image: url(../img/mobile-bmw2.png);
+     height: 267px;
+}
+
+#search, .side{
+     display: none;
+}
+
+#cars{
+     width: 98%;
+     margin-left: 2%;
+}    
+
+nav{
+     display: none;
+}
+
+#mobile-menu{
+     display: block;
+     background-color: #aeaeae;
+     width: 100%;
+     text-align: center;
+}
+
+h1{
+     text-align: center;
+}
+
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 539px){
+
+#featured{
+     background-image: url(../img/mobile-bmw3.png);
+     height: 225px;
+}
+
+#featured h2{
+     font-size: 1.2em;
+}
+#search, .side{
+     display: none;
+}
+
+#cars{
+     width: 98%;
+     margin-left: 2%;
+}    
+
+nav{
+     display: none;
+}
+
+#mobile-menu{
+     display: block;
+     background-color: #aeaeae;
+     width: 100%;
+     text-align: center;
+}
+
+h1{
+     text-align: center;
+}
+
+
+}
+
