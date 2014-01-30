@@ -32,12 +32,9 @@ Silver : #d5d5d5;
      background-color: #3c3c3c;
      margin: 0 auto;
      font-family: 'Monda', sans-serif;
-
  }
 
-
-
-
+/* ==== General classes ==== */
 .left{
      float: left;
 
@@ -51,51 +48,12 @@ Silver : #d5d5d5;
      clear: both;
 }
 
-.col-1{
-     width: 40px;
 
-}
-
-.col-2{
-     width: 100px;
-
-}
-
-.col-3{
-     width: 220px;
-
-}
 
 .col-4{
      width: 280px;
 
 }
-
-.col-5{
-     width: 280px;
-
-}
-
-.col-6{
-     width: 340px;
-
-}
-
-.col-7{
-     width: 400px;
-
-}
-
-.col-8{
-     width: 460px;
-     padding: 10px;
-     margin: 10px;
-
-}
-
-
-
-
 
 /* ==== Headings and paragraphs style ====  */
 
@@ -188,9 +146,8 @@ nav ul li:hover ul li a:hover {
 #featured h2{
      text-indent: 1%;
      padding-top: 6px;
-
-
 }
+
 
 #featured p{
      text-indent: 10px;
@@ -218,8 +175,8 @@ select{
      display: block;
      width: 60%;
      margin: 5% auto;
-
 }
+
 
 #search a{
      display: block;
@@ -232,10 +189,10 @@ select{
      color: #d5d5d5;
      border-radius: 5px;
      text-align: center;
-
 }
 
 /* ==== Div cars style ====  */
+
 
 #cars h2{
    text-indent: 1%;  
@@ -243,15 +200,18 @@ select{
    text-shadow: 1px 1px black;
 }
 
+
 #cars h3{
      text-indent: 2%;
 }
+
 
 #cars{
      width: 640px;
      float: left;
      margin-bottom: 20px;
-    }
+}
+
 
 #cars div.col-4{
      float: left;
@@ -260,28 +220,26 @@ select{
      box-shadow: 1px 1px 3px white;
 }
 
-
-
+/* ==== Table styles ==== */
 table{
      text-align: center;
      width: 95%;
      margin: 0 auto 5px auto;
      border-collapse: collapse;
      font-size: .8em;
-
 }
+
 
 td{
      border: 1px solid #913232;
-
 }
 
 /* ==== Div class App(aside) style ====  */
 
 .side{
      float: right;
-    
 }
+
 
 .side h3{
      text-indent: 3%;
@@ -289,16 +247,19 @@ td{
      text-shadow: 1px 1px black;
 }
 
+
 div.side{
      width: 290px;
      margin: 15px 20px 30px 0px;
-
 }
+
 
 .side p{
      line-height: 1.3em;
      padding: 3%;
 }
+
+
 .side a{
      display: block;
      width: 100px;
@@ -310,8 +271,8 @@ div.side{
      color: #d5d5d5;
      border-radius: 5px;
      text-align: center;
-
 }
+
 
 .div.side{
      width: 290px;
@@ -328,12 +289,12 @@ label{
      margin-left: 8%;
 }
 
+
 input{
      margin: 0 auto 10px 8%;
      width: 80%;
      height: 20px;
 }
-
 
 
 #newsletter a{
@@ -347,8 +308,8 @@ input{
      color: #d5d5d5;
      border-radius: 5px;
      text-align: center;
-
 }
+
 
 div.video + div.side{
      margin-top: 5px;
@@ -362,6 +323,5 @@ footer{
      background-color: #913232;
      clear: both;
      text-indent: 1%;
-
 
 }
